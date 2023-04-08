@@ -36,7 +36,7 @@ This whole thing might sound like a big deal but it isn't. At least as soon as y
 Probably yes. 
 
 ## Do you honestly think that you know better than the people that made and maintain Laravel?
-No. We certainly don't. And this packag is not necessarily usefull to you. If you are just making a web site with Laravel, there is a substantial possibility that this is something you don't quite need. If on the other hand you are making a system that contains business logic and provides an API (and optionally a web site too) then this is defenitelly something that might benefit you.
+No. We certainly don't. And this package is not necessarily usefull to you. If you are just making a web site with Laravel, there is a substantial possibility that this is something you don't quite need. If on the other hand you are making a system that contains business logic and provides an API (and optionally a web site too) then this is defenitelly something that might benefit you.
 
 ## Ok, I am completely lost here, can you PLEASE stop fooling around and explain EXACTLY what this does and how ?
 Sure.
