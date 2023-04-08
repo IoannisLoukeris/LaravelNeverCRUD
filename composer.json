@@ -1,11 +1,11 @@
 {
-    "name": "johnl/laravel-never-crud",
+    "name": "ioannisloukeris/laravel-never-crud",
     "description": "Never ever CRUD in Laravel projects EVER again... or something close",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "JohnL\\LaravelNeverCrud\\": "src/"
+            "IoannisL\\LaravelNeverCrud\\": "src/"
         }
     },
     "authors": [
