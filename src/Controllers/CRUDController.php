@@ -2,6 +2,7 @@
 
 namespace LaravelNeverCrud\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use LaravelNeverCrud\Handlers\CRUDHandler;
 use LaravelNeverCrud\Http\Responses\ErrorType;
 use LaravelNeverCrud\Http\Responses\JSONResponse;
