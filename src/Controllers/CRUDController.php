@@ -1,10 +1,10 @@
 <?php
 
-namespace BasculeCommon\Http\Controllers;
+namespace LaravelNeverCrud\Http\Controllers;
 
-use BasculeCommon\Handlers\CRUDHandler;
-use BasculeCommon\Http\Responses\ErrorType;
-use BasculeCommon\Http\Responses\JSONResponse;
+use LaravelNeverCrud\Handlers\CRUDHandler;
+use LaravelNeverCrud\Http\Responses\ErrorType;
+use LaravelNeverCrud\Http\Responses\JSONResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

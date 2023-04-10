@@ -1,6 +1,6 @@
 <?php
 
-namespace BasculeCommon\Http\Controllers;
+namespace LaravelNeverCrud\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

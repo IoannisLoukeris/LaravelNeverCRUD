@@ -1,6 +1,6 @@
 <?php
 
-namespace BasculeCommon\DataServices;
+namespace LaravelNeverCrud\DataServices;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueryBuilder\QueryBuilder;

@@ -1,9 +1,9 @@
 <?php
 
-namespace BasculeCommon\Handlers;
+namespace LaravelNeverCrud\Handlers;
 
-use BasculeCommon\DataServices\ModelDataService;
-use BasculeCommon\Http\Responses\ErrorType;
+use LaravelNeverCrud\DataServices\ModelDataService;
+use LaravelNeverCrud\Http\Responses\ErrorType;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Log;
 
