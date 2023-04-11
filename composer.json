@@ -13,5 +13,8 @@
             "name": "Ioannis Loukeris",
             "email": "ioannisloukeris@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "bensampo/laravel-enum": "^4.2"
+    }
 }

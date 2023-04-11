@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelNeverCrud\Http\Controllers;
+namespace LaravelNeverCrud\Controllers;
 
 use App\Http\Controllers\Controller;
 use LaravelNeverCrud\Handlers\CRUDHandler;
-use LaravelNeverCrud\Http\Responses\ErrorType;
-use LaravelNeverCrud\Http\Responses\JSONResponse;
+use LaravelNeverCrud\Responses\ErrorType;
+use LaravelNeverCrud\Responses\JSONResponse;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
