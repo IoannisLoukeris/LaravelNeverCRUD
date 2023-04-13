@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelNeverCrud\Responses;
+namespace IoannisL\LaravelNeverCrud\Responses;
 
 use BenSampo\Enum\Enum;
 

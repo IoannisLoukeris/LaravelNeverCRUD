@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelNeverCrud\Responses;
+namespace IoannisL\LaravelNeverCrud\Responses;
 
 /**
  * JSONResponse, handles the response of server to client

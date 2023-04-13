@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelNeverCrud\DataServices;
+namespace IoannisL\LaravelNeverCrud\DataServices;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueryBuilder\QueryBuilder;

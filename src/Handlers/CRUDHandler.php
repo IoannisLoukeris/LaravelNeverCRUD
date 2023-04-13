@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelNeverCrud\Handlers;
+namespace IoannisL\LaravelNeverCrud\Handlers;
 
-use LaravelNeverCrud\DataServices\ModelDataService;
-use LaravelNeverCrud\Http\Responses\ErrorType;
+use IoannisL\LaravelNeverCrud\DataServices\ModelDataService;
+use IoannisL\LaravelNeverCrud\Responses\ErrorType;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Log;
 
