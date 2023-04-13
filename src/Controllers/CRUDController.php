@@ -20,10 +20,20 @@ class CRUDController extends Controller
   public function __construct(
     CRUDHandler $crudHandler,
     array $creationValidationRules,
-    array $updateValidationRules
+    array $updateValidationRules = null
   ) {
     $this->_creationValidationRules = $creationValidationRules;
-    $this->_updateValidationRules = $updateValidationRules;
+
+    if ($updateValidationRules === null) {
+      $this->_updateValidationRules = $creationValidationRules;
+    } else {
+      $this->_updateValidationRules = $updateValidationRules;
+    }
+
+    if (empty($this->_updateValidationRules['id'])) {
+      $this->_updateValidationRules['id'] = 'required';
+    }
+
     $this->crudHandler = $crudHandler;
   }
 
@@ -125,7 +135,7 @@ class CRUDController extends Controller
   {
     if ($request->has('filter')) {
       $query = $request->input('filter');
-      if (isset($query['all'])){
+      if (isset($query['all'])) {
         unset($query['all']);
       }
       $request->query->set('filter', $query);
