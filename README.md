@@ -64,4 +64,7 @@ Not everything is coming from or going to your database. Hence the data aservice
 Depending on what you are doing it is very important. For the moment let's pretend that this is just a CRUD aleviation package :-) 
 
 ## Examples? Tutorials?
-Too lazy. If there is enough interest will do it though. 
+~~Too lazy. If there is enough interest will do it though.~~
+I got my lazy bum to write and example that you can find here:
+
+[LaravelNeverCRUD-example](https://github.com/IoannisLoukeris/LaravelNeverCRUD-example)
