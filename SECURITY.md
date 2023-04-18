@@ -18,4 +18,4 @@ If the vulerability you found is not already listed there, please report.
 I take security _**very**_ seriously and I will respond within 48 hours either with comments/questions etc,
 OR with a solution.
 
-To report vulenrabilities please use the form at https://loukeris.com/security/
+To report vulenrabilities please use the GitHub facilities or if you need to contact me directly ouside GitHub use the form at https://loukeris.com/security/
