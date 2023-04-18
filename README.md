@@ -63,6 +63,13 @@ Not everything is coming from or going to your database. Hence the data aservice
 ## Seems the architectural aspect is quite important too...
 Depending on what you are doing it is very important. For the moment let's pretend that this is just a CRUD alleviation package :-) 
 
+## Versioning
+Always use the latest release of the major version you have started with. We don't expect breaking changes in the foreseeable future so all 1.x.x versions should be drop in replacements for previous releases. Breaking changes will be denoted by the increase of the major version number. So for this project:
+* 1.x.x <- major version increments only for breaking changes in the project
+* x.1.x <- subversion that denotes the features present. Will increment as features are added. 
+* x.x.1 <- minor version. Will increment for bugfixes, types, non feature additions or code quality refactorings. 
+For example the change that added this paragraph to the readme.md file will increment the release from v1.0.3 to v1.0.4 . When (if?) dynamic properties are added version will go from v1.0.x to 1.1.x . Updating to that version will __not__ break your code. Promise. 
+
 ## Examples? Tutorials?
 ~~Too lazy. If there is enough interest will do it though.~~
 I got my lazy bum to write an example that you can find here:
