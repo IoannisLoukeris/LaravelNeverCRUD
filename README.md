@@ -44,7 +44,7 @@ Sure.
 ## Well ???
 Ok. Laravel uses MVC. Models to access and manipulate data. Views for displaying them inside premade templates and Controllers to fill the Views with the data. Classic stuff. 
 NeverCRUD changes this. We introduce the concept of handlers which actually do the work and leave to the controllers the responsibility of sanitizing input. ***WARNING*** Security is your responsibility. Sanitizing and validating input is only ***PART*** of security and is handled by the NeverCRUD derived controllers automatically. ***THAT DOESN'T MEAN YOU ARE SECURE!!!!*** Everything else security wise is ***YOUR*** responsibility. 
-Handlers (derived from the NeverCRUD controller) house the business logic. Handlers don't manipulate data directly. *No cheating please*. NeverCRUD introduces the concept of DataService. One included data service is ModelDataService which is using models to do its thing. In planning we have a CachedModelDataService that includes the use of cache. Another under development is the APIDataService. What that does is left for you to imagine. 
+Handlers (derived from the NeverCRUD handler) house the business logic. Handlers don't manipulate data directly. *No cheating please*. NeverCRUD introduces the concept of DataService. One included data service is ModelDataService which is using models to do its thing. In planning we have a CachedModelDataService that includes the use of cache. Another under development is the APIDataService. What that does is left for you to imagine. 
 
 ## Why do all that? Handlers? DataServices? What is the benefit?
 Imagine the following scenario:
