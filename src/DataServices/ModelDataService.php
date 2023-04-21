@@ -11,6 +11,7 @@ class ModelDataService
    * Model $_model
    **/
   protected Model $_model;
+  protected array $metaData = [];
 
   public function __construct(Model $model)
   {
