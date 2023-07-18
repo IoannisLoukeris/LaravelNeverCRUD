@@ -144,7 +144,7 @@ class CRUDHandler
   {
     foreach ($subtables as [$table, $rows]){
       $handler = resolve('App/Handlers/'. $table .'Handler');
-      $handler->saveOrUpdateBulk($rows);
+      $handler->saveBulk($rows, true);
     }
   }
 }
