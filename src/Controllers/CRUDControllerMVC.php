@@ -12,7 +12,7 @@ use IoannisL\LaravelNeverCrud\Responses\ErrorType;
 use IoannisL\LaravelNeverCrud\Responses\JSONResponse;
 use Spatie\QueryBuilder\QueryBuilder;
 
-class CRUDController extends Controller
+class CRUDControllerMVC extends Controller
 {
     protected array $_creationValidationRules;
     protected array $_updateValidationRules;
