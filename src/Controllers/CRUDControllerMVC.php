@@ -79,7 +79,7 @@ class CRUDControllerMVC extends Controller
         return $this->createWithData($input);
     }
 
-    protected function createWithData($input)
+    public function createWithData($input)
     {
         $validator = Validator::make($input, $this->_creationValidationRules);
 
@@ -181,7 +181,7 @@ class CRUDControllerMVC extends Controller
         return $this->updateWithData($input, $idToUpdate);
     }
 
-    protected function updateWithData($input, $idToUpdate)
+    public function updateWithData($input, $idToUpdate)
     {
         $validator = Validator::make($input, $this->_updateValidationRules);
 
