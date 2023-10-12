@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "bensampo/laravel-enum": "^4.2"
+        "bensampo/laravel-enum": "^6.6"
     }
 }

@@ -61,6 +61,11 @@ class CRUDController extends Controller
   public function create(Request $request)
   {
     $input = $request->all();
+    return $this->createWithData($input);
+  }
+
+  public function createWithData($input)
+  {
     $validator = Validator::make($input, $this->_creationValidationRules);
 
     if ($validator->fails()) {
@@ -119,6 +124,11 @@ class CRUDController extends Controller
     $input = $request->all();
     $idToUpdate = $request->route('idToUpdate') ?? $request->input('id');
 
+    return $this->updateWithData($input, $idToUpdate);
+  }
+
+  public function updateWithData($input, $idToUpdate)
+  {
     $validator = Validator::make($input, $this->_updateValidationRules);
 
     if ($validator->fails()) {

@@ -22,6 +22,7 @@ class ModelDataService
     $tempModel = $this->_model->create($input);
     $pkColumn = $tempModel->getKeyName();
     $this->_model = $tempModel;
+
     return $this->_model->$pkColumn;
   }
 
@@ -68,7 +69,7 @@ class ModelDataService
 
   public function findByWhere(array $query, string $orderBy = null)
   {
-    if ($orderBy!==null) {
+    if ($orderBy !== null) {
       return $this->_model->where($query)->orderBy($orderBy);
     }
     return $this->_model->where($query);

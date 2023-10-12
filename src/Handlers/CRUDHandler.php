@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Log;
 class CRUDHandler
 {
   protected ModelDataService $_mDS;
+  protected array $metaData = [];
 
   public function __construct(ModelDataService $mDS)
   {
@@ -43,6 +44,9 @@ class CRUDHandler
     $message = null;
     try {
       $newId = $this->_mDS->create($input);
+
+      $this->fillSubtables($this->findSubtablesToFill($input));
+      
       $status = 'success';
     } catch (QueryException $e) {
       Log::error($e->getMessage());
@@ -127,5 +131,20 @@ class CRUDHandler
       $message = ErrorType::SERVER_ERROR;
     }
     return ['status' => $status, 'message' => $message];
+  }
+
+  protected function findSubtablesToFill(array $input)
+  {
+    if (empty($this->metaData['subTables'])) return [];
+
+    return array_intersect_key($input, $this->metaData['subTables']);
+  }
+
+  protected function fillSubtables(array $subtables)
+  {
+    foreach ($subtables as [$table, $rows]){
+      $handler = resolve('App/Handlers/'. $table .'Handler');
+      $handler->saveBulk($rows, true);
+    }
   }
 }
