@@ -10,11 +10,7 @@
     },
     "authors": [
         {
-            "name": "Ioannis Loukeris",
-            "email": "ioannisloukeris@gmail.com"
+            "name": "Ioannis Loukeris"
         }
-    ],
-    "require": {
-        "bensampo/laravel-enum": "^6.6"
-    }
+    ]
 }

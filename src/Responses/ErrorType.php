@@ -2,9 +2,7 @@
 
 namespace IoannisL\LaravelNeverCrud\Responses;
 
-use BenSampo\Enum\Enum;
-
-final class ErrorType extends Enum
+final class ErrorType
 {
   const SERVER_ERROR = '00000';
   const CREATE_VALIDATION_FAILED = '00001';
